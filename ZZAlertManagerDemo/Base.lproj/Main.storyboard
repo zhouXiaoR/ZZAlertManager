@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwI-tB-iCn">
+                                <rect key="frame" x="0.0" y="305" width="375" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Yby-Ix-9uk"/>
+                                </constraints>
+                                <state key="normal" title="正常弹出，先来后到"/>
+                                <connections>
+                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kNL-Aj-2vG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vca-Us-9BM">
+                                <rect key="frame" x="0.0" y="365" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="goh-bc-jTa"/>
+                                </constraints>
+                                <state key="normal" title="移除所有屏幕上的弹框，然后我弹出"/>
+                                <connections>
+                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t5u-di-5aZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogz-df-N1F">
+                                <rect key="frame" x="0.0" y="335" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="tsT-eQ-WqL"/>
+                                </constraints>
+                                <state key="normal" title="我优先级最高，再弹我也在最上面"/>
+                                <connections>
+                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ySu-rW-LBh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iuj-on-WNj">
+                                <rect key="frame" x="0.0" y="395" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="r2z-Qh-Pwo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <state key="normal" title="若屏幕上无弹框我弹出，若有弹框我会缓存，等其它消失完我再出来"/>
+                                <connections>
+                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hAW-oE-9CF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCF-xY-aoU">
+                                <rect key="frame" x="0.0" y="425" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4Lw-pH-s3W"/>
+                                </constraints>
+                                <state key="normal" title="我来了，但我会严格按照优先级排队展示在屏幕上"/>
+                                <connections>
+                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KbZ-ac-f6w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2L-wl-gSs">
+                                <rect key="frame" x="0.0" y="455" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="OeF-Da-cK8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="若屏幕上没弹框我就出来，否则永远再见，我也不会缓存"/>
+                                <connections>
+                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7g0-Lj-m8D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0NO-Pi-p98">
+                                <rect key="frame" x="0.0" y="500" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YHe-K2-hdM"/>
+                                </constraints>
+                                <state key="normal" title="清除指定的view"/>
+                                <connections>
+                                    <action selector="clearSview:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TbN-YA-X4a"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2FF-xE-vPl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="1pC-C2-66U"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Egi-tT-Ih3">
+                                <rect key="frame" x="0.0" y="530" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="eCZ-0F-s0U"/>
+                                </constraints>
+                                <state key="normal" title="清除全部的view"/>
+                                <connections>
+                                    <action selector="clearAllWc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MNm-Ip-XSL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEE-Qp-Mj1">
+                                <rect key="frame" x="0.0" y="560" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ig9-yC-wpu"/>
+                                </constraints>
+                                <state key="normal" title="遍历测试log"/>
+                                <connections>
+                                    <action selector="findSpecView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wz6-K3-c4m"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="e2L-wl-gSs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1Cz-Tg-4Cd"/>
+                            <constraint firstItem="zwI-tB-iCn" firstAttribute="top" secondItem="2FF-xE-vPl" secondAttribute="bottom" constant="5" id="3BB-U0-yu0"/>
+                            <constraint firstItem="Iuj-on-WNj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3VA-zf-PR0"/>
+                            <constraint firstItem="yEE-Qp-Mj1" firstAttribute="top" secondItem="Egi-tT-Ih3" secondAttribute="bottom" id="5rs-aP-cJ0"/>
+                            <constraint firstItem="e2L-wl-gSs" firstAttribute="top" secondItem="eCF-xY-aoU" secondAttribute="bottom" id="7ZW-Jk-lcf"/>
+                            <constraint firstItem="Iuj-on-WNj" firstAttribute="top" secondItem="Vca-Us-9BM" secondAttribute="bottom" id="8JQ-6R-4uG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eCF-xY-aoU" secondAttribute="trailing" id="AGs-Zv-2Wl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e2L-wl-gSs" secondAttribute="trailing" id="BAo-Ay-BuT"/>
+                            <constraint firstItem="ogz-df-N1F" firstAttribute="top" secondItem="zwI-tB-iCn" secondAttribute="bottom" id="EDR-kE-mbi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Iuj-on-WNj" secondAttribute="trailing" id="HFr-go-Lyt"/>
+                            <constraint firstItem="Egi-tT-Ih3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HKJ-1s-Tfe"/>
+                            <constraint firstItem="0NO-Pi-p98" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="M9d-ip-0Td"/>
+                            <constraint firstItem="2FF-xE-vPl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="P8D-Lh-Pl6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2FF-xE-vPl" secondAttribute="trailing" id="QBh-MT-gqW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ogz-df-N1F" secondAttribute="trailing" id="R0J-Iu-myZ"/>
+                            <constraint firstItem="yEE-Qp-Mj1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="S8W-tg-WzE"/>
+                            <constraint firstItem="Egi-tT-Ih3" firstAttribute="top" secondItem="0NO-Pi-p98" secondAttribute="bottom" id="SNl-9L-Hfe"/>
+                            <constraint firstItem="Vca-Us-9BM" firstAttribute="top" secondItem="ogz-df-N1F" secondAttribute="bottom" id="Z4N-w2-l8g"/>
+                            <constraint firstItem="2FF-xE-vPl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZEK-eT-sBj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Egi-tT-Ih3" secondAttribute="trailing" id="b2G-tm-7iS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zwI-tB-iCn" secondAttribute="trailing" id="efa-fk-SO7"/>
+                            <constraint firstItem="eCF-xY-aoU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fu4-Xe-4tS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yEE-Qp-Mj1" secondAttribute="trailing" id="hgK-jX-fFA"/>
+                            <constraint firstItem="Vca-Us-9BM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lH5-hG-RK3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vca-Us-9BM" secondAttribute="trailing" id="sjh-ki-Sus"/>
+                            <constraint firstItem="zwI-tB-iCn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tYz-Wl-xxq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0NO-Pi-p98" secondAttribute="trailing" id="vtM-Nb-due"/>
+                            <constraint firstItem="eCF-xY-aoU" firstAttribute="top" secondItem="Iuj-on-WNj" secondAttribute="bottom" id="xDX-8f-UBh"/>
+                            <constraint firstItem="0NO-Pi-p98" firstAttribute="top" secondItem="e2L-wl-gSs" secondAttribute="bottom" constant="15" id="xlQ-Sa-yw5"/>
+                            <constraint firstItem="ogz-df-N1F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yYZ-VA-PL5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
