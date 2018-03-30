@@ -6,6 +6,9 @@
 ### 需求
 按一定的次序，类型弹，可控，而不是乱弹
 
+### 支持cocoaPods
+```pod 'ZZAlertManager'```
+
 ### 使用规则步骤
 1. 自定义view,请继承 ```ZZBaseAlertView```
 2. 在弹出自定义view的弹出方法中，执行``` [super zz_base_show]```,只有执行此方法，才会把当前的自定义view添加至windown,并交给```ZZAlertViewManager```来管理。如果需要弹出动画，请在上述方法之后调用自己的动画。

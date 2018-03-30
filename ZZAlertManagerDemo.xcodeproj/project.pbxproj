@@ -17,7 +17,6 @@
 		69F03168206E274900E46A12 /* ZZBaseAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F03166206E274900E46A12 /* ZZBaseAlertView.m */; };
 		69F0316B206E276A00E46A12 /* ZZViewA.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F0316A206E276A00E46A12 /* ZZViewA.m */; };
 		69F0316D206E2CDF00E46A12 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 69F0316C206E2CDF00E46A12 /* README.md */; };
-		69F0316F206E3C5100E46A12 /* ZZAlertManager.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 69F0316E206E3C5100E46A12 /* ZZAlertManager.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +37,6 @@
 		69F03169206E276A00E46A12 /* ZZViewA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZViewA.h; sourceTree = "<group>"; };
 		69F0316A206E276A00E46A12 /* ZZViewA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZViewA.m; sourceTree = "<group>"; };
 		69F0316C206E2CDF00E46A12 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		69F0316E206E3C5100E46A12 /* ZZAlertManager.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ZZAlertManager.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +69,6 @@
 		69F0314B206E22FD00E46A12 /* ZZAlertManagerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				69F0316E206E3C5100E46A12 /* ZZAlertManager.podspec */,
 				69F0316C206E2CDF00E46A12 /* README.md */,
 				69F03162206E274900E46A12 /* ZZAlertViewManager */,
 				69F0314C206E22FD00E46A12 /* AppDelegate.h */,
@@ -162,7 +159,6 @@
 				69F03156206E22FD00E46A12 /* Assets.xcassets in Resources */,
 				69F0316D206E2CDF00E46A12 /* README.md in Resources */,
 				69F03154206E22FD00E46A12 /* Main.storyboard in Resources */,
-				69F0316F206E3C5100E46A12 /* ZZAlertManager.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
