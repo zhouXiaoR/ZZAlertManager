@@ -13,7 +13,7 @@
 #define RandColor RGBColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
 
 @interface ZZViewA()
-@property(nonatomic,weak)UIImageView *headerImgView;
+@property(nonatomic,weak)UILabel *tipsLab;
 @end
 
 @implementation ZZViewA
@@ -26,10 +26,12 @@
 }
 
 - (void)setUp{
-    UIImageView * img = [[UIImageView alloc]init];
-    img.backgroundColor = [UIColor redColor];
-    [self addSubview:img];
-    self.headerImgView = img;
+    UILabel * tipsLab = [[UILabel alloc]init];
+    tipsLab.text = @"点我消失";
+    tipsLab.textColor = [UIColor lightGrayColor];
+    tipsLab.textAlignment = NSTextAlignmentCenter;
+    [self addSubview:tipsLab];
+    self.tipsLab = tipsLab;
     self.alpha = 0.0f;
 }
 
@@ -40,7 +42,8 @@
     int orx = arc4random_uniform(200);
     int ory = arc4random_uniform(10) + 30;
     
-    self.frame = CGRectMake(orx, ory, 200, 100);    
+    self.frame = CGRectMake(orx, ory, 200, 100);   
+    self.tipsLab.frame = self.bounds;
 }
 
 - (void)showAview{
