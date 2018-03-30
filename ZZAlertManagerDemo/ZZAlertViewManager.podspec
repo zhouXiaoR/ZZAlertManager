@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/zhouXiaoR/ZZAlertManager'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'zhouXiaoR' => 'zhouxiaorui@duiba.com.cn' }
-  s.source           = { :git => 'https://github.com/zhouXiaoR/ZZAlertManager', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/zhouXiaoR/ZZAlertManager.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
   s.source_files = 'ZZAlertViewManager/**/*'
   
